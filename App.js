@@ -1,14 +1,16 @@
+// navigation imports
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import { StyleSheet } from "react-native";
-
+// screen imports
 import Home from "./codebase/screens/Home";
 import NumbersScreen from "./codebase/screens/NumbersScreen";
 import TutorialHomeScreen from "./codebase/screens/TutorialHomeScreen";
 
+// navigation stack
 const Stack = createNativeStackNavigator();
 
+// routing setup for the entire app
 export default function App() {
   return (
     <NavigationContainer>
@@ -28,12 +30,3 @@ export default function App() {
     </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
