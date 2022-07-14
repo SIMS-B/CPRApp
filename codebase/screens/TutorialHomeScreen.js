@@ -1,5 +1,10 @@
+// component imports
 import { StyleSheet, View, Text } from "react-native";
 
+// color imports
+import colors from "../codebase/config/colors";
+
+// screen layout
 export default function Home(props) {
   return (
     <View style={styles.container}>
@@ -8,10 +13,11 @@ export default function Home(props) {
   );
 }
 
+// screen styling
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: colors.white,
     alignItems: "center",
     justifyContent: "center",
   },

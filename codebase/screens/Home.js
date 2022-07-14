@@ -1,5 +1,10 @@
+// component imports
 import { Button, StyleSheet, View, Dimensions } from "react-native";
 
+// color imports
+import colors from "../codebase/config/colors";
+
+// navigation functions
 const navigateToNumbersScreen = (props) => {
   props.navigation.navigate("NumbersScreen");
 };
@@ -7,6 +12,7 @@ const navigateToTutorialHomeScreen = (props) => {
   props.navigation.navigate("TutorialHomeScreen");
 };
 
+// screen layout
 export default function Home(props) {
   return (
     <View style={styles.container}>
@@ -25,10 +31,11 @@ export default function Home(props) {
   );
 }
 
+// screen styling
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: colors.white,
     alignItems: "center",
     justifyContent: "center",
   },
