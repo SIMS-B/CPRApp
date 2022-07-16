@@ -2,7 +2,7 @@
 import { StyleSheet, View, Text } from "react-native";
 
 // color imports
-import colors from "../codebase/config/colors";
+import colors from "../config/colors";
 
 // screen layout
 export default function Home(props) {

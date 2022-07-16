@@ -2,7 +2,7 @@
 import { Button, StyleSheet, View, Dimensions } from "react-native";
 
 // color imports
-import colors from "../codebase/config/colors";
+import colors from "../config/colors";
 
 // navigation functions
 const navigateToNumbersScreen = (props) => {
